@@ -164,11 +164,17 @@ nav{
   z-index: 999;
 }
 
+.logo img{
+  width: 50px;
+  position: absolute;
+  left: 75px;
+}
+
 nav .logo div a{
   margin: 10px;
   color: white;
   font-size: 37px;
-  margin-left: 50px;
+  margin-left: 105px;
   font-weight: 600;
 }
 
