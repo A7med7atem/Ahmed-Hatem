@@ -835,6 +835,34 @@ button:hover{
   color: #ed0930;
 }
 
+/* sticky key style */
+
+.back-to-top-wrapper{
+  position: absolute;
+  top: 150vh;
+  right: 0.9rem;
+  bottom: -194.6em;
+  width: 3em;
+  pointer-events: none;
+}
+
+.back-to-top-link{
+  position: sticky;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+  color: #ed0930;
+  font-size: 40px;
+}
+
 /* footer style */
 
 footer{
@@ -867,12 +895,15 @@ footer .icons i{
 footer .fa-facebook:hover{
   color: #ed0930;
 }
+
 footer .fa-instagram:hover{
   color: #ed0930;
 }
+
 footer .fa-behance:hover{
   color: #ed0930;
 }
+
 footer .fa-github:hover{
   color: #ed0930;
 }
