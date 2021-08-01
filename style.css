@@ -846,6 +846,10 @@ button:hover{
   pointer-events: none;
 }
 
+.back-to-top-link:hover{
+  transform: scale(1.2);
+}
+
 .back-to-top-link{
   position: sticky;
   pointer-events: all;
