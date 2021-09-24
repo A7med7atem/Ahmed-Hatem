@@ -1366,16 +1366,19 @@ media qureies media queries media queries
 media qureies media queries media queries */
 @media (max-width: 320px){
   .home-content, .about-content, .skills-content, .services-content, .work-content, .contact-content{
-  padding: 0 10px;
+  padding: 0 0;
   margin: auto;
   width: auto;
+  padding-left: 8px;
 }
 }
 @media (max-width: 480px){
 .home-content, .about-content, .skills-content, .services-content, .work-content, .contact-content{
-  padding: 0 10px;
+  padding: 0 0;
   margin: auto;
   width: auto;
+  padding-left: 8px;
+
 }
   .logo img{
   width: 40px;
@@ -1387,7 +1390,7 @@ nav .logo div a{
   margin: 10px;
   color: white;
   font-size: 30px;
-  margin-left: 32vw;
+  margin-left: 33vw;
   font-weight: 600;
 }
 .work-content .card3{
