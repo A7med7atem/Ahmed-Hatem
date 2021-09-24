@@ -1039,10 +1039,48 @@ display: none;
 /* media queries media queries meadia queries */
 @media (max-width: 880px){
   .about .lines{
-  display: none;
+  display: none; 
+}
+  .logo img{
+  width: 40px;
+  position: absolute;
+  left: 75px;
+}
+
+nav .logo div a{
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+  margin-left: 90px;
+  font-weight: 600;
+}
+  nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 17px;
 }
 }
 @media (max-width: 768px){
+  .logo img{
+  width: 40px;
+  position: absolute;
+  left: 75px;
+}
+
+nav .logo div a{
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+  margin-left: 90px;
+  font-weight: 600;
+}
+  nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 14px;
+}
   .work-content .card3{
   transform: translateX(0);
   margin-left: 0;
@@ -1128,7 +1166,7 @@ display: none;
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  transform: translateX(54%);
+  transform: translateX(60%);
 }
 
 .back-to-top-wrapper{
@@ -1323,16 +1361,34 @@ footer .icons i{
   margin-top: 15px;
 }
 }
-
 /* media qureies media queries media queries
 media qureies media queries media queries
 media qureies media queries media queries */
-
+@media (max-width: 320px){
+  .home-content, .about-content, .skills-content, .services-content, .work-content, .contact-content{
+  padding: 0 10px;
+  margin: auto;
+  width: auto;
+}
+}
 @media (max-width: 480px){
 .home-content, .about-content, .skills-content, .services-content, .work-content, .contact-content{
   padding: 0 10px;
   margin: auto;
   width: auto;
+}
+  .logo img{
+  width: 40px;
+  position: absolute;
+  left: 30%;
+}
+
+nav .logo div a{
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+  margin-left: 32vw;
+  font-weight: 600;
 }
 .work-content .card3{
   transform: translateX(0);
