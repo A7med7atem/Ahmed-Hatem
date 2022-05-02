@@ -212,7 +212,7 @@ nav ul li a:hover{
 
 .home{
   display: flex;
-  background: url("aaa.jpg") no-repeat center ;
+  background: url("homeNew.jpg") no-repeat center ;
   height: 100vh;
   background-attachment: fixed;
   background-size: cover;
@@ -274,7 +274,7 @@ nav ul li a:hover{
   left: 0;
   height: 105%;
   width: 100%;
-  background-color: #050505;
+  background-color: #060314;
   animation: typing 3s steps(10) infinite;
 }
 
@@ -315,6 +315,19 @@ nav ul li a:hover{
 
 .home-content .hire a:hover{
   background-color: transparent;
+  color: #ed0930;
+}
+
+.home .icons{
+  margin-top: 200px;
+  margin-left: 422px;
+}
+.home .icons i{
+  font-size: 38px;
+  padding: 10px 46px 0 10px;
+}
+
+.home-content .icons i:hover{
   color: #ed0930;
 }
 
@@ -1364,12 +1377,13 @@ footer .icons i{
 /* media qureies media queries media queries
 media qureies media queries media queries
 media qureies media queries media queries */
-@media (max-width: 320px){
+@media (max-width: 375px){
   .home-content, .about-content, .skills-content, .services-content, .work-content, .contact-content{
   padding: 0 0;
   margin: auto;
   width: auto;
   padding-left: 8px;
+  
 }
 }
 @media (max-width: 480px){
@@ -1666,3 +1680,4 @@ nav .logo{
   text-align: justify;
   font-weight: 400;
 }
+
