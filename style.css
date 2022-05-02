@@ -1109,7 +1109,7 @@ nav .logo div a{
   
   .home{
   display: flex;
-  background: url("aaa.jpg") no-repeat center;
+  background: url("homeNew.jpg") no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
