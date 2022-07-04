@@ -218,6 +218,32 @@ nav ul li a:hover{
   background-size: cover;
 }
 
+.player{
+  background-color: rgba(255 255 255 / 100%);
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin-top:90px ;
+  display: flex;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 3px;
+}
+.music_text{
+  padding: 9px 1px 0 3px;
+  color:#ed0930;
+}
+.music_text:active, .player_icon:active{
+  color: #00203c;
+}
+.player_icon  {
+  color:#ed0930;
+  font-size: 26px;
+  padding: 5px;
+}
+
 .home-content{
   color: white;
   line-height: 1.3;
@@ -383,10 +409,18 @@ nav ul li a:hover{
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
+  position: relative;
 }
+/* 
+.about .left-content img::after{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ed0930;
+} */
 
 .about .right-content {
-  margin: 50px 0 0 100px;
+  margin: 10px 0 0 100px;
   display: inline-block;
 }
 
@@ -511,7 +545,8 @@ nav ul li a:hover{
 }
 
 .services .services-content .card .box{
-  padding: 45px 14px;
+  padding: 50px 14px;
+    border-radius: 8px;
 }
 
 .services .services-content .card .box:hover{
@@ -543,6 +578,7 @@ nav ul li a:hover{
   align-items: center;
   justify-content: center;
   display: flex;
+  padding-bottom: 5px;
 }
 
 /* skills style */
@@ -634,24 +670,28 @@ nav ul li a:hover{
 }
 
 .skills .skills-content .right .bars .second::before{
-  width: 85%;
+  width: 90%;
 }
 
 .skills .skills-content .right .bars .third::before{
-  width: 65%;
+  width: 85%;
 
 }
 
 .skills .skills-content .right .bars .fourth::before{
-  width: 75%;
-}
-
-.skills .skills-content .right .bars .fifth::before{
   width: 90%;
 }
 
+.skills .skills-content .right .bars .fifth::before{
+  width: 95%;
+}
+
 .skills .skills-content .right .bars .sixth::before{
-  width: 80%;
+  width: 65%;
+}
+
+.skills .skills-content .right .bars .seventh::before{
+  width: 75%;
 }
 
 /* Work style */
@@ -678,7 +718,7 @@ nav ul li a:hover{
   overflow: hidden;
   cursor: pointer;
   margin: 30px 0;
-  height: 325px;
+  height: 360px;
 }
 
 .work-content .card .box{
@@ -688,7 +728,7 @@ nav ul li a:hover{
 }
 
 .work-content .card .box img{
-  width: 150px;
+  width: 190px;
   border-radius: 50%;
   border: #ed0930 solid 5px;
 }
@@ -1170,7 +1210,7 @@ nav .logo div a{
   left: 0;
   height: 110%;
   width: 100%;
-  background-color: #050505;
+  background-color: #060314;
   animation: typing2 3s steps(10) infinite;
 }
 .about .left-content img{
@@ -1461,7 +1501,7 @@ nav .logo div a{
   left: 0;
   height: 110%;
   width: 100%;
-  background-color: #050505;
+  background-color: #060314;
   animation: typing2 3s steps(10) infinite;
 }
 

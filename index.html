@@ -11,12 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    
   <script src="https://kit.fontawesome.com/378f27707a.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="logo.png">
   <title>Ahmed Hatem</title>
 </head>
 <body>
   <!-- navbar --> <!--done-->
 
-  <nav class="navbar">
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="600">
     <div class="logo">
       <img src="logo.png" alt="">
       <div><a href="#">portfo<span>lio.</span></a></div>
@@ -34,20 +36,25 @@
   <!-- home section --> <!--done-->
 
   <div class="home" id="home">
+    <div class="player" onclick="togglePlay()" data-aos="fade-right" data-aos-delay="400">
+      <div class="music_text">Music</div>
+      <i class="fab fa-soundcloud player_icon"></i>
+      <audio src="song.mp3" id="audioId" loop></audio>
+    </div>
     <div class="max-width">
-      <div class="home-content">
-        <div class="one">Hi, my name is</div>
-        <div class="two">Ahmed Hatem</div>
-        <div class="move">
+      <div class="home-content" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+        <div class="one" data-aos="fade-up" data-aos-delay="200">Hi, my name is</div>
+        <div class="two" data-aos="fade-up" data-aos-delay="350">Ahmed Hatem</div>
+        <div class="move" data-aos="fade-up" data-aos-delay="500">
           <div class="three">and I'm a</div>
           <ul>
-            <li><span>Student</span></li>
+            <li><span>HS Student</span></li>
             <li><span>Developer</span></li>
             <li><span>Leader</span></li>
             <li><span>Freelancer</span></li>
           </ul>
         </div>
-        <div class="hire"><a href="https://www.upwork.com/freelancers/~019a140462db9398c9" target="_blank">Hire me</a></div>
+        <div class="hire" data-aos="fade-up" data-aos-delay="650"><a href="https://www.upwork.com/freelancers/~019a140462db9398c9" target="_blank">Hire me</a></div>
         <div class="icons">
           <a href="https://www.facebook.com/profile.php?id=100017914417083" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/ahmedhatem275/" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -63,25 +70,25 @@
 
   <section class="about" id="about">
     <div class="max-width">
-      <h2 class="title-light">About me</h2>
-      <div class="lines"></div>
+      <h2 class="title-light" data-aos="fade-out">About me</h2>
+      <div class="lines" data-aos="zoom-in-up" data-aos-duration="300"></div>
       <div class="about-content">
         <div class="about-content2">
-          <div class="left-content aaa">
+          <div class="left-content aaa" data-aos="fade-right">
             <img src="new2.jpg" alt="">
-          </div>
-          <div class="right-content aaa">
-            <div class="move">
+          </div>  
+          <div class="right-content aaa" >
+            <div class="move" data-aos="fade-left">
               <div class="name">I'm Ahmed and I'm a</div>
               <ul>
-                <li><span>Student</span></li>
+                <li><span>HS Student</span></li>
                 <li><span>Leader</span></li>
                 <li><span>Developer</span></li>
                 <li><span>Freelancer</span></li>
               </ul>
             </div>
-            <div class="information">I'm Ahmed Hatem, and I'm a 16-year-old high school rising junior student at STEM Ismailia high school. I am an adequate leader with really good communication skills. I believe that I am a creative student who always thinks out of the box, even in academic or non-academic situations. I practice different sports like table tennis and chess, and I enjoy reading in my spare time. I have a clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion. I am an accomplished, hard-working student who tries to change for the best by taking risks and challenges to improve himself. I enjoy using my skills to contribute to the exciting technological advances every day in my school and community.</div>
-            <div class="download"><a href="" download target="_blank">Download CV</a></div>
+            <div class="information" data-aos="fade-left" data-aos-delay="100">I'm Ahmed Hatem, and I'm a 16-year-old high school rising junior student at STEM Ismailia high school. I am an adequate leader with really good communication skills. I believe that I am a creative student who always thinks out of the box, even in academic or non-academic situations. I practice different sports like table tennis and chess, and I enjoy reading in my spare time. I have a clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion. I am an accomplished, hard-working student who tries to change for the best by taking risks and challenges to improve himself. I enjoy using my skills to contribute to the exciting technological advances every day in my school and community.</div>
+            <div class="download" data-aos="fade-left" data-aos-delay="150"><a href="">Download CV</a></div>
           </div>
         </div>
       </div>
@@ -90,53 +97,53 @@
 
   <!-- services section --> <!--done-->
 
-  <section class="services" id="services">
+  <section class="services" id="services" data-aos="fade-up">
     <div class="max-width">
-        <h2 class="title-dark">My Services</h2>
+        <h2 class="title-dark" data-aos="fade-out">My Services</h2>
         <div class="services-content">
-          <div class="card" data-tilt>
+          <div class="card" data-aos="flip-right">
             <div class="box">
               <i class="fas fa-code"></i>
               <div class="card-title">Web Design</div>
               <div class="card-content">Designing and producing high quality websites using different programming languages.</div>
-            </div>
           </div>
-          <div class="card" data-tilt>
+          </div>
+          <div class="card" data-aos="flip-right" data-aos-delay="100">
             <div class="box">
               <i class="fas fa-mobile-alt"></i>
               <div class="card-title">App Design</div>
               <div class="card-content">Designing interactive interfaces with the user for mobile applications of different sizes.</div>
             </div>
           </div>    
-            <div class="card" data-tilt>
+            <div class="card" data-aos="flip-right" data-aos-delay="200">
             <div class="box">
               <i class="fas fa-paint-brush"></i>
               <div class="card-title">Graphic Design</div>
               <div class="card-content">Creativity and integration in design to convey a certain meaning to the viewer through the design</div>
             </div>
           </div>
-              <div class="card" data-tilt>
+              <div class="card" data-aos="flip-right" data-aos-delay="300">
             <div class="box">
               <i class="far fa-play-circle"></i>
                 <div class="card-title">Video Edit</div>
-                <div class="card-content">Producing innovative videos, whether editing or animating, with effects to prevent getting bored</div>
+                <div class="card-content">Producing innovative videos with wondeful attractive interactions, whether by editing or animating.</div>
             </div>
           </div>
         </div>
     </div>
   </section>
-
+  
   <!-- skills section --> <!--done-->
 
   <section class="skills" id="skills">
     <div class="max-width">
-      <h2 class="title-light">My Skills</h2>
-      <div class="lines"></div>
+      <h2 class="title-light" data-aos="fade-out">My Skills</h2>
+      <div class="lines" data-aos="zoom-in-up" data-aos-duration="300"></div>
       <div class="skills-content">
         <div class="left column">
-          <div class="title">My skills & experience</div>
-          <div class="left-content">I'm a Front-End Developer with a talent of coming up with innovative ideas and styles to fit the specific content for each website I make to attract the viewer. Also, I am a creative, artistic, and ambitious Graphic Designer with 2+ years of experience with a talent to convey a specific meaning to the viewer through my designs. I have magnificent knowledge of Illustrator and Photoshop. Furthermore, I have leadership and problem solving skills from working on projects in various fields with different teams from many countries.</div>
-          <div class="read-more"> <a href="">Read more</a> </div>
+          <div class="title" data-aos="fade-right">My skills & experience</div>
+          <div class="left-content" data-aos="fade-right" data-aos-delay="100">I'm a Front-End Developer with a talent of coming up with innovative ideas and styles to fit the specific content for each website I make to attract the viewer. Also, I am a creative, artistic, and ambitious Graphic Designer with 2+ years of experience with a talent to convey a specific meaning to the viewer through my designs. I have magnificent knowledge of Illustrator and Photoshop. Furthermore, I have leadership and problem solving skills from working on projects in various fields with different teams from many countries.</div>
+          <div class="read-more" data-aos="fade-right" data-aos-delay="150"> <a href="">Read more</a> </div>
         </div>
         <div class="right column">
           <div class="bars">
@@ -144,42 +151,49 @@
               <span class="name html">HTML</span>
               <span class="percent first">95%</span>
             </div>
-            <div class="first line"></div>
+            <div class="first line" data-aos="fade-left" data-aos-duration="400"></div>
           </div>
           <div class="bars">
             <div class="info">
               <span class="name css">CSS</span>
-              <span class="percent second">85%</span>
+              <span class="percent second">90%</span>
             </div>
-            <div class="second line"></div>
+            <div class="second line" data-aos="fade-left" data-aos-duration="400" data-aos-delay="100"></div>
           </div>
           <div class="bars">
             <div class="info">
-              <span class="name after-effects">After Effects</span>
-              <span class="percent second">65%</span>
+              <span class="name js">JavaScript</span>
+              <span class="percent third">85%</span>
             </div>
-            <div class="third line"></div>
-          </div>
-          <div class="bars">
-            <div class="info">
-              <span class="name premier">Premiere Pro</span>
-              <span class="percent fourth">75%</span>
-            </div>
-            <div class="fourth line"></div>
+            <div class="third line" data-aos="fade-left" data-aos-duration="400" data-aos-delay="200"></div>
           </div>
           <div class="bars">
             <div class="info">
               <span class="name photoshop">Photoshop</span>
-              <span class="percent fifth">90%</span>
+              <span class="percent fourth">90%</span>
             </div>
-            <div class="fifth line"></div>
+            <div class="fourth line" data-aos="fade-left" data-aos-duration="400" data-aos-delay="300"></div>
           </div>
           <div class="bars">
             <div class="info">
               <span class="name illustrator">Illustrator</span>
-              <span class="percent sixth">80%</span>
+              <span class="percent fifth">95%</span>
             </div>
-            <div class="sixth line"></div>
+            <div class="fifth line" data-aos="fade-left" data-aos-duration="400" data-aos-delay="400"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span class="name after-effects">After Effects</span>
+              <span class="percent sixth">65%</span>
+            </div>
+            <div class="sixth line" data-aos="fade-left" data-aos-duration="400" data-aos-delay="500"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span class="name premier">Premiere Pro</span>
+              <span class="percent seventh">75%</span>
+            </div>
+            <div class="seventh line"data-aos="fade-left" data-aos-duration="400" data-aos-delay="600"></div>
           </div>
         </div>
       </div>
@@ -188,25 +202,25 @@
 
   <!-- work section --> <!--done-->
 
-  <section class="work" id="work">
+  <section class="work" id="work" data-aos="fade-up">
     <div class="max-width">
-      <h2 class="title-dark">My Work</h2>
+      <h2 class="title-dark" data-aos="fade-out">My Work</h2>
       <div class="work-content">
-        <div class="card card1" data-tilt>
+        <div class="card card1" data-aos="flip-down">
           <div class="box">
             <img src="AUC.jpg" alt="">
             <div class="card-title">AUC Robotics</div>
             <p>We are Developing soft skills through participating in competitions and hosting technical programs, small and large events within the scope of robotics.</p>
-          </div>
         </div>
-        <div class="card card2" data-tilt>
+        </div>
+        <div class="card card2" data-aos="flip-down" data-aos-delay="150">
           <div class="box">
             <img src="IEEE.jpg" alt="">
             <div class="card-title">IEEE SCU</div>
             <p>The trusted voice for engineering, CS, and IT around the globe. We're dedicated to advancing technology for inspiring a global community to innovate for a better future.</p>
           </div>
         </div>
-        <div class="card card3" data-tilt>
+        <div class="card card3" data-aos="flip-down" data-aos-delay="300">
           <div class="box">
             <img src="SCURT.jpg" alt="">
             <div class="card-title">Racing SCU</div>
@@ -221,24 +235,24 @@
 
   <section class="contact" id="contact">
     <div class="max-width">
-      <h2 class="title-light">Contact Me</h2>
-      <div class="lines"></div>
+      <h2 class="title-light" data-aos="fade-out">Contact Me</h2>
+      <div class="lines" data-aos="zoom-in-up" data-aos-duration="300"></div>
       <div class="contact-content">
         <div class="left column">
-          <div class="left-title">Get in touch</div>
-          <p>For any question, send a massege and I'll home in on what you need, and if you faced any issues, I'd love to help you, so you can briefly describe your massege below, and I'am always standing by and eager to help.</p>
+          <div class="left-title" data-aos="zoom-in">Get in touch</div>
+          <p data-aos="zoom-in" data-aos-delay="150">For any question, send a massege and I'll home in on what you need, and if you faced any issues, I'd love to help you, so you can briefly describe your massege below, and I'am always standing by and eager to help.</p>
           <div class="icons">
             <div class="icons1">
               <div class="left-content">
-                <i class="fas fa-user"></i>
-                <div class="info">
+                <i class="fas fa-user" data-aos="zoom-in"></i>
+                <div class="info" data-aos="zoom-in">
                   <div class="name title">Name</div>
                   <div class="my-name content">Ahmed Hatem</div>
                 </div>
               </div>
               <div class="left-content">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="info">
+                <i class="fas fa-map-marker-alt" data-aos="zoom-in" data-aos-delay="150"></i>
+                <div class="info" data-aos="zoom-in" data-aos-delay="150">
                   <div class="address title">Address</div>
                   <div><a class="my-address content" href="https://www.google.com/maps/place/Ayoun+Mousse+Power+Plant/@29.9139801,32.592319,1435m/data=!3m1!1e3!4m5!3m4!1s0x14563b3272a7b02b:0x5be87f731b022ead!8m2!3d29.9137708!4d32.5922901">Oyoun Mousa, Egypt</a></div>
                 </div>
@@ -246,15 +260,15 @@
             </div>
             <div class="icons2">  
               <div class="left-content">
-                <i class="fas fa-envelope"></i>
-                <div class="info">
+                <i class="fas fa-envelope" data-aos="zoom-in"></i>
+                <div class="info" data-aos="zoom-in">
                   <div class="email title">Email</div>
                   <div><a class="my-email content" href="mailto:a7med7atem100@gmail.com">a7med7atem100@gmail.com</a></div>
                 </div>
               </div>
               <div class="left-content">
-                <i class="fas fa-phone-alt"></i>
-                <div class="info">
+                <i class="fas fa-phone-alt" data-aos="zoom-in" data-aos-delay="150"></i>
+                <div class="info" data-aos="zoom-in" data-aos-delay="150">
                   <div class="phone title">Phone</div>
                   <div><a class="my-phone content" href="https://api.whatsapp.com/send?phone=+201068647552&text=Hi" target="_blank">+201068647552</a></div>
                 </div>
@@ -263,11 +277,11 @@
           </div>
         </div>
         <div class="right column">
-          <div class="right-title">Message Me</div>
-          <form action="mailto:a7med7atem100@gmail.com">
+          <div class="right-title" data-aos="zoom-in">Message Me</div>
+          <form id="myForm" action="https://formsubmit.co/a7med7atem100@gmail.com" method="post" data-aos="zoom-in" data-aos-delay="200">
             <div class="fields1">
               <div class="field name">
-                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Name" required id="name">
               </div>
               <div class="field email">
                 <input type="email" placeholder="Email" required>
@@ -281,7 +295,7 @@
                 <textarea name="topic" cols="30" rows="10" placeholder="Message..." required></textarea>
               </div>
             </div>
-              <div class="button">
+              <div class="button" data-aos="zoom-in" data-aos-delay="100">
                 <button type="submit">Send Message</button>
               </div>
           </form>
@@ -293,23 +307,25 @@
   <!-- sticky key -->
 
   <div class="back-to-top-wrapper">
-    <a href="#home" class="back-to-top-link" aria-label="Scroll to Top"><i class="fas fa-chevron-circle-up"></i></a>
+    <a href="#home" class="back-to-top-link" aria-label="Scroll to Top"><i class="fas fa-chevron-circle-up" data-aos="fade-up"></i></a>
   </div>
 
   <!-- footer section --> <!--done-->
 
   <footer>
     <div class="icons">
-      <a href="https://www.facebook.com/profile.php?id=100017914417083" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/ahmedhatem275/" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="https://www.behance.net/ahmedhatem23" target="_blank"><i class="fab fa-behance"></i></a>
-      <a href="https://www.linkedin.com/in/ahmed-hatem-469714201/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/A7med7atem" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100017914417083" target="_blank"><i class="fab fa-facebook" data-aos="zoom-in" data-aos-duration="300"></i></a>
+      <a href="https://www.instagram.com/ahmedhatem275/" target="_blank"><i class="fa fa-instagram" data-aos="zoom-in" data-aos-duration="300"></i></a>
+      <a href="https://www.behance.net/ahmedhatem23" target="_blank"><i class="fab fa-behance" data-aos="zoom-in" data-aos-duration="300"></i></a>
+      <a href="https://www.linkedin.com/in/ahmed-hatem-469714201/" target="_blank"><i class="fab fa-linkedin-in" data-aos="zoom-in" data-aos-duration="300"></i></a>
+      <a href="https://github.com/A7med7atem" target="_blank"><i class="fab fa-github" data-aos="zoom-in" data-aos-duration="300"></i></a>
     </div>
     <div class="foot">Created by <span>Ahmed Hatem</span> | <i class="far fa-copyright"></i> 2021 All rights reserved.</div>
   </footer>
 
 
-  <script src="vanilla-tilt.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
